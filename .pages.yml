@@ -1,0 +1,97 @@
+media:
+  input: src/uploads
+  output: /uploads
+
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: src/posts
+    filename: "{year}-{month}-{day}-{primary}.md"
+    view:
+      fields: [title, date, category]
+      sort: [date]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: author
+        label: Author
+        type: string
+        default: Kuya
+      - name: category
+        label: Category
+        type: select
+        required: true
+        options:
+          values:
+            - value: gears
+              label: Gears
+            - value: grooves
+              label: Grooves
+            - value: engineering-life
+              label: Engineering Life
+            - value: kuya-talk
+              label: Kuya Talk
+      - name: tags
+        label: Tags
+        type: string
+        list: true
+      - name: excerpt
+        label: Short summary (shows on cards)
+        type: text
+      - name: image
+        label: Cover image
+        type: image
+      - name: imageAlt
+        label: Cover image description
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+
+  - name: site
+    label: Site settings
+    type: file
+    path: src/_data/site.json
+    format: json
+    fields:
+      - name: title
+        label: Site title
+        type: string
+      - name: short
+        type: string
+        hidden: true
+      - name: tagline
+        label: Tagline
+        type: string
+      - name: description
+        label: Homepage description
+        type: text
+      - name: url
+        type: string
+        hidden: true
+      - name: author
+        label: Default author name
+        type: string
+      - name: links
+        label: Music & social links
+        type: object
+        fields:
+          - name: spotify
+            label: Spotify URL
+            type: string
+          - name: youtube
+            label: YouTube URL
+            type: string
+          - name: instagram
+            label: Instagram URL
+            type: string
