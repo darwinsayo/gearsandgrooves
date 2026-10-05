@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+---
+{%- set cat = categories | findCategory(category) %}
+<article class="post">
+  <header class="post-header wrap narrow">
+    {% if cat %}<a class="pill pill-{{ cat.slug }}" href="/category/{{ cat.slug }}/">{{ cat.name }}</a>{% endif %}
+    <h1>{{ title }}</h1>
+    <p class="meta">
+      <span>{{ author or site.author }}</span>
+      <span aria-hidden="true">·</span>
+      <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
+      <span aria-hidden="true">·</span>
+      <span>{{ content | readingTime }}</span>
+    </p>
+  </header>
+  {% if image %}
+  <figure class="post-cover wrap"><img src="{{ image }}" alt="{{ imageAlt or title }}"></figure>
+  {% endif %}
+  <div class="prose wrap narrow">
+    {{ content | safe }}
+  </div>
+  {% if tags and tags.length %}
+  <footer class="post-tags wrap narrow">
+    {% for t in tags %}<a class="tag" href="/tag/{{ t | slugify }}/">#{{ t }}</a>{% endfor %}
+  </footer>
+  {% endif %}
+  <nav class="post-nav wrap narrow" aria-label="More posts">
+    {%- set prev = collections.posts | getPreviousCollectionItem(page) %}
+    {%- set next = collections.posts | getNextCollectionItem(page) %}
+    {% if next %}<a href="{{ next.url }}"><small>Older</small>{{ next.data.title }}</a>{% else %}<span></span>{% endif %}
+    {% if prev %}<a class="right" href="{{ prev.url }}"><small>Newer</small>{{ prev.data.title }}</a>{% endif %}
+  </nav>
+</article>

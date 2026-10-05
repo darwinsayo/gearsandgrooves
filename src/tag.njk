@@ -1,0 +1,23 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tag
+permalink: "/tag/{{ tag | slugify }}/"
+eleventyComputed:
+  title: "#{{ tag }}"
+---
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">Tag</p>
+    <h1>#{{ tag }}</h1>
+  </div>
+</section>
+<section class="wrap section">
+  <div class="card-grid">
+    {%- for post in collections.posts | byTag(tag) %}
+      {% include "card.njk" %}
+    {%- endfor %}
+  </div>
+</section>

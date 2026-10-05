@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "gears",
+    "name": "Gears",
+    "blurb": "Builds, repairs, and before-and-afters from the garage.",
+    "icon": "gear"
+  },
+  {
+    "slug": "grooves",
+    "name": "Grooves",
+    "blurb": "New releases and the stories behind the tracks.",
+    "icon": "record"
+  },
+  {
+    "slug": "engineering-life",
+    "name": "Engineering Life",
+    "blurb": "College, projects, and lessons learned the hard way.",
+    "icon": "ruler"
+  },
+  {
+    "slug": "kuya-talk",
+    "name": "Kuya Talk",
+    "blurb": "Advice for younger siblings and fellow big brothers.",
+    "icon": "chat"
+  }
+]

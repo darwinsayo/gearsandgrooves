@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+---
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">gearsandgrooves.com</p>
+      <h1>Wrenches by day,<br><span>beats by night.</span></h1>
+      <p class="lede">{{ site.description }}</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/blog/">Read the blog</a>
+        <a class="btn btn-ghost" href="/category/grooves/">Hear the music</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <img class="spin" src="/assets/img/logo.svg" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="wrap section">
+  <div class="cat-grid">
+    {%- for c in categories %}
+    <a class="cat-card cat-{{ c.slug }}" href="/category/{{ c.slug }}/">
+      <span class="cat-icon">{% set icon = c.icon %}{% include "icon.njk" %}</span>
+      <strong>{{ c.name }}</strong>
+      <span>{{ c.blurb }}</span>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="wrap section">
+  <div class="section-head">
+    <h2>Latest from the shop</h2>
+    <a href="/blog/">All posts →</a>
+  </div>
+  <div class="card-grid">
+    {%- for post in collections.posts | limit(6) %}
+      {% include "card.njk" %}
+    {%- else %}
+      <p>No posts yet. Fire up the CMS and write the first one.</p>
+    {%- endfor %}
+  </div>
+</section>

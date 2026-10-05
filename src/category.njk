@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: categories
+  size: 1
+  alias: cat
+permalink: "/category/{{ cat.slug }}/"
+eleventyComputed:
+  title: "{{ cat.name }}"
+---
+<section class="page-head head-{{ cat.slug }}">
+  <div class="wrap">
+    <span class="cat-icon big">{% set icon = cat.icon %}{% include "icon.njk" %}</span>
+    <h1>{{ cat.name }}</h1>
+    <p class="lede">{{ cat.blurb }}</p>
+  </div>
+</section>
+<section class="wrap section">
+  <div class="card-grid">
+    {%- for post in collections.posts | byCategory(cat.slug) %}
+      {% include "card.njk" %}
+    {%- else %}
+      <p>Nothing here yet. Check back soon.</p>
+    {%- endfor %}
+  </div>
+</section>

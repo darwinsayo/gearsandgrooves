@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ excerpt or site.description }}">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="{{ title or site.title }}">
+  <meta property="og:description" content="{{ excerpt or site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="{{ site.title }} home">
+        <img src="/assets/img/logo.svg" alt="" width="44" height="44">
+        <span class="brand-text">Gears <span class="amp">&amp;</span> Grooves</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+      <nav class="site-nav" aria-label="Main">
+        <a href="/blog/"{% if page.url == "/blog/" %} aria-current="page"{% endif %}>Blog</a>
+        {%- for c in categories %}
+        <a href="/category/{{ c.slug }}/"{% if page.url == "/category/" + c.slug + "/" %} aria-current="page"{% endif %}>{{ c.name }}</a>
+        {%- endfor %}
+        <a href="/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <img src="/assets/img/logo.svg" alt="" width="56" height="56">
+        <div>
+          <strong>{{ site.title }}</strong>
+          <p>{{ site.tagline }}</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        {%- if site.links.spotify %}<a href="{{ site.links.spotify }}">Spotify</a>{% endif %}
+        {%- if site.links.youtube %}<a href="{{ site.links.youtube }}">YouTube</a>{% endif %}
+        {%- if site.links.instagram %}<a href="{{ site.links.instagram }}">Instagram</a>{% endif %}
+        <a href="/feed.xml">RSS</a>
+      </div>
+      <p class="copy">© {{ "" | year }} {{ site.title }}. Built in the garage.</p>
+    </div>
+  </footer>
+</body>
+</html>
