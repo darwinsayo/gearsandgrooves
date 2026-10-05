@@ -12,13 +12,15 @@ image: /uploads/C05291B9-6790-4821-AE1B-4804D8977A3D_1_105_c.jpeg
 ---
 Every track starts somewhere. This one started with a drum loop I made at 1 a.m.
 
-### How it came together. 
+### How it came together.
 
 - **The idea:** Channel inner negative thoughts into expressive and enjoyable late night grooves.
-- **The sound:** Driving music paired with witch-house asthetics and low laying basslines.
+- **The sound:** Driving music paired with witch-house aesthetics and low laying basslines.
 - **The hard part:** Finding the words to describe heartbreak
 
-Cardioflux comes from the name of my love song playlist in itunes. I thought it would be a neat tribute to take that name and twist it into a much more melencholic purpose. 
+Cardioflux comes from the name of my love song playlist in itunes. I thought it would be a neat tribute to take that name and twist it into sopmething with much more melencholic purpose. 
+
+The album cover is simply a used walmart-brand angle grinder cutting disk. "That you be an awsome looking cd!"
 
 **Listen here:**
 
@@ -38,25 +40,25 @@ Apple Music [https://music.apple.com/us/album/cardioflux/6816321906](https://mus
 
 ***Out of Sight*** 
 
-The first track in Cardioflux. Desgined as an intro for the album. I wrote this song in the dark, focusing only on other senses to find words from inside me. 
+The first track in Cardioflux. Designed as an intro for the album, its short for out of sight out of mind. You know, those weirdos who whisper in your head... I wrote this song in the dark, focusing only on other senses to find words from inside me. 
 
 
 
 ***Follow Me***
 
-This one is emotional. It speaks about nostaliga in a painful tone. I wanted to write about my longing to go back to what once was, a time when I was first place. A place that now only exists in dreamland. 
+This one is emotional. It speaks about nostalgia in a painful tone. I wanted to write about my longing to go back to what once was, a time when I was first place. A place that now only exists in dreamland. 
 
 
 
 ***Skipping on the Edge***
 
-This song it literal. I felt a surge of road rage and put myself in danger. Hatred and anger transformed into 6,000 rpms on the dash and felony speed. 
+This song is literal. I felt a surge of road rage and put myself in danger. Hatred and anger transformed into 6,000 rpms on the dash and felony speed. 
 
 
 
 ***End of an Era***
 
-This song reflects the emotions of every student returning to school for the fall. The silent brown leafs marking the end of summer. Short lived bliss molding into stress, deadlines, and poorly written syllabuses.\
+This song reflects the emotions of every student returning to school for the fall. The silent brown leaves marking the end of summer. Short lived bliss molding into stress, deadlines, and poorly written syllabuses.
 
 
 
