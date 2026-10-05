@@ -16,7 +16,7 @@ Every track starts somewhere. This one started with a drum loop I made at 1 a.m.
 
 - **The idea:** Channel inner negative thoughts into expressive and enjoyable late night grooves.
 - **The sound:** Midnight driving music paired with witch-house aesthetics and low laying basslines.
-- **The hard part:** Finding the words to describe heartbreak
+- **The hard part:** Finding the words to describe heartbreak.
 
 Cardioflux comes from the name of my love song playlist in itunes. I thought it would be a neat tribute to take that name and twist it into sopmething with much more melencholic purpose. 
 
